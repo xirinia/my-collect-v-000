@@ -10,7 +10,7 @@ def my_collect(array)
     string = array.join(" ")
     while i < array.length
       new_array = string.split
-      collection << new_array[i]
+      new_array.each { |value| collection.push value if value.to_f%2==0}
       i +=1
       end
   end
