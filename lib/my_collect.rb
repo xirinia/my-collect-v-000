@@ -1,3 +1,4 @@
+
 def my_collect(array)
   i=0
   collection = []
@@ -8,11 +9,11 @@ def my_collect(array)
     end
   else
     string = array.join(" ")
-    while i < array.length
-      new_array = string.split
-      new_array.each { |value| collection.push value if value.to_f%2==0}
+    new_array = string.split
+    while i < new_array.length
+      collection << new_array[i] if i%2 == 0 
       i +=1
-      end
+    end
   end
   collection
 end
