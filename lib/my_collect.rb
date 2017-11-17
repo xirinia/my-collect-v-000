@@ -11,7 +11,7 @@ def my_collect(array)
     string = array.join(" ")
     new_array = string.split
     while i < new_array.length
-      collection << new_array[i] if i%2 == 0 
+      collection << new_array[i] if i%2 == 0
       i +=1
     end
   end
